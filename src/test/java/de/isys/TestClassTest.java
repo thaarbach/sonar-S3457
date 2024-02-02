@@ -8,13 +8,6 @@ import java.util.List;
 import static de.isys.AbstractTestClass.SyncCode.EQUAL;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Thomas Haarbach
- * Date: 02.02.24
- * Time: 15:24
- * Copyright 2024 iSYS-Software GmbH Munich
- */
 class TestClassTest {
 
 	@Test
