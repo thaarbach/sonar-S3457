@@ -7,11 +7,9 @@ public class Main {
 	static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
 	public static void main(String[] args) {
-		LOGGER.atInfo().log("Hello world");
+		final TestClass testClass = new TestClass();
 
-		for (int i = 1; i <= 5; i++) {
-			LOGGER.info("i = {}", i);
-		}
+		testClass.getSyncResult("hello", "hello");
 
 
 	}

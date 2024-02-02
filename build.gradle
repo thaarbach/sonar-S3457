@@ -15,6 +15,7 @@ buildscript {
 plugins {
     id 'java'
     id "org.sonarqube" version "4.4.1.3373"
+    id "io.freefair.lombok" version "8.1.0"
 }
 
 repositories {
@@ -43,6 +44,10 @@ sonar {
     }
 }
 
+lombok {
+    version = '1.18.28'
+}
+
 ext {
     slf4jVersion = '2.0.7'
     log4jVersion = '2.20.0'
@@ -54,6 +59,9 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-slf4j2-impl:$log4jVersion"
     implementation "org.slf4j:slf4j-api:$slf4jVersion"
     implementation "org.slf4j:slf4j-ext:$slf4jVersion"
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-text:1.10.0'
+
 
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
