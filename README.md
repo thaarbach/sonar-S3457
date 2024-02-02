@@ -212,8 +212,8 @@ java.lang.NullPointerException: Cannot invoke "org.sonar.plugins.java.api.tree.T
 
 ```
 
-Gradle Version: 8.4
-Sonarqube Gradle Plugin: 4.2.1.3168
-SonarQube Community Edition Version 10.3 (build 82913) in Docker.
+Gradle Version: 8.4  
+Sonarqube Gradle Plugin: 4.2.1.3168  
+SonarQube Community Edition Version 10.3 (build 82913) in Docker.  
 
 `./gradlew sonar -Dsonar.host.url=<sonar-host> -Dsonar.token=<sonar-token>`
