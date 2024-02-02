@@ -1,11 +1,3 @@
-plugins {
-    id 'java'
-    id "org.sonarqube" version "4.4.1.3373"
-}
-
-group = 'de.isys'
-version = '1.0-SNAPSHOT'
-
 buildscript {
     repositories {
         mavenLocal()
@@ -19,6 +11,26 @@ buildscript {
 
     }
 }
+
+plugins {
+    id 'java'
+    id "org.sonarqube" version "4.4.1.3373"
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url "https://nexus.isys.de/repository/jstage-maven-group/"
+        metadataSources {
+            mavenPom()
+            artifact()
+        }
+    }
+
+}
+
+group = 'de.isys'
+version = '1.0-SNAPSHOT'
 
 sonar {
     properties {
