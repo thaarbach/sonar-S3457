@@ -217,3 +217,5 @@ Sonarqube Gradle Plugin: 4.2.1.3168
 SonarQube Community Edition Version 10.3 (build 82913) in Docker.  
 
 `./gradlew sonar -Dsonar.host.url=<sonar-host> -Dsonar.token=<sonar-token>`
+
+see also https://community.sonarsource.com/t/unable-to-run-check-class-org-sonar-java-checks-printfmisusecheck-s3457-on-file-comet-src-main-ja/106120/3
